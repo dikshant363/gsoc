@@ -20,6 +20,9 @@ logs/
 # Caches
 .cache/
 **/.cache/
+**/.npm-cache/
+**/.pnpm-store/
+**/.yarn/cache/
 __pycache__/
 *.py[cod]
 

@@ -1,0 +1,161 @@
+.org-card-container {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  height: 100%;
+  cursor: pointer;
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.org-card-container:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+}
+
+.org-card-logo-container {
+  height: 140px;
+  padding: 24px;
+  background-color: var(--card-header-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.org-card-logo {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
+}
+
+.org-card-name-container {
+  padding: 16px 20px 8px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Galano Grotesque Alt Medium", sans-serif;
+  color: var(--text-primary);
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.org-card-description-container {
+  padding: 8px 20px 16px;
+  font-family: "Galano Grotesque Alt Light", sans-serif;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.org-card-category-container {
+  text-align: center;
+  padding: 8px 20px;
+}
+
+.org-card-projects-container {
+  text-align: center;
+  padding: 4px 20px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.org-card-category-container span {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: var(--tag-bg);
+  color: var(--accent-color);
+  border-radius: 20px;
+  font-family: "Galano Grotesque Alt Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.org-card-years-container {
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.org-card-year {
+  display: inline-block;
+  margin: 3px;
+  padding: 4px 10px;
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  border-radius: 6px;
+  font-family: "Galano Grotesque Alt Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.org-card-technologies-container {
+  padding: 12px 20px 20px;
+  text-align: center;
+}
+
+.org-card-technology {
+  display: inline-block;
+  margin: 3px;
+  padding: 4px 10px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  border-radius: 20px;
+  font-family: "Galano Grotesque Alt Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.org-card-technology:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.org-card-technology-extra {
+  font-size: 12px;
+  margin-left: 4px;
+  color: var(--text-secondary);
+  font-family: "Galano Grotesque Alt Medium", sans-serif;
+  text-decoration: none;
+}
+
+.org-card-logo-container {
+  position: relative;
+  /* Ensure relative pos for absolute child */
+}
+
+.org-card-bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+body.dark-mode .org-card-bookmark {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.org-card-bookmark:hover {
+  transform: scale(1.1);
+}

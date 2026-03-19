@@ -1,0 +1,81 @@
+:root {
+  --bg-body: #f6f8fa;
+  --bg-sidebar: #ffffff;
+  --bg-card: #ffffff;
+  --bg-search: #ffffff;
+  --text-primary: #24292e;
+  --text-secondary: #586069;
+  --border-color: #e1e4e8;
+  --accent-color: #db6400;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 12px 24px rgba(0, 0, 0, 0.1);
+  --hover-bg: #f8f9fa;
+  --tag-bg: #fff0e0;
+  --card-header-bg: #f8f9fa;
+  --code-bg: #e8f4f6;
+  --code-text: #16697a;
+}
+
+body.dark-mode {
+  --bg-body: #0d1117;
+  --bg-sidebar: #161b22;
+  --bg-card: #161b22;
+  --bg-search: #161b22;
+  --text-primary: #c9d1d9;
+  --text-secondary: #8b949e;
+  --border-color: #30363d;
+  --accent-color: #f78166;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 12px 24px rgba(0, 0, 0, 0.8);
+  --hover-bg: #21262d;
+  --tag-bg: rgba(219, 100, 0, 0.15);
+  --card-header-bg: #21262d;
+  --code-bg: rgba(22, 105, 122, 0.2);
+  --code-text: #58a6ff;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Galano Grotesque Alt Medium";
+  src: url("/fonts/GalanoGrotesqueAltMedium.woff");
+}
+
+@font-face {
+  font-family: "Galano Grotesque Alt Light";
+  src: url("/fonts/GalanoGrotesqueAltLight.otf");
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

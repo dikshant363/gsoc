@@ -1,0 +1,33 @@
+.mobile-toolbar {
+  height: 54px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  z-index: 10;
+  background-color: var(--bg-search);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.mobile-toolbar-logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  min-width: 50px;
+}
+
+.mobile-toolbar-sidebar-toggle {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  font-size: 35px;
+  min-width: 50px;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.mobile-toolbar-search {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+}

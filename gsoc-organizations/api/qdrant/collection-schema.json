@@ -1,0 +1,39 @@
+{
+  "collection_name": "gsoc_ideas",
+  "vectors": {
+    "size": 768,
+    "distance": "Cosine"
+  },
+  "vectors_config": {
+    "title": {
+      "size": 768,
+      "distance": "Cosine"
+    },
+    "description": {
+      "size": 768,
+      "distance": "Cosine"
+    },
+    "tech_stack": {
+      "size": 768,
+      "distance": "Cosine"
+    },
+    "combined": {
+      "size": 768,
+      "distance": "Cosine"
+    }
+  },
+  "payload_schema": {
+    "id": "keyword",
+    "org": "keyword",
+    "year": "integer",
+    "status": "keyword",
+    "title": "text",
+    "description": "text",
+    "tech_stack": "keyword[]",
+    "languages": "keyword[]",
+    "topics": "keyword[]",
+    "difficulty": "keyword",
+    "language": "keyword",
+    "category": "keyword"
+  }
+}

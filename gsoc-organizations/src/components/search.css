@@ -1,0 +1,20 @@
+.search-search * {
+  width: 90%;
+}
+
+/* Dark Mode Overrides for Search Input */
+body.dark-mode .search-search .ui.input>input {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+body.dark-mode .search-search .ui.input>input:focus {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--accent-color);
+}
+
+body.dark-mode .search-search .ui.icon.input>i.icon {
+  color: var(--text-secondary);
+}

@@ -1,0 +1,45 @@
+.project-card-main-container {
+  height: 100%;
+}
+
+.project-card-main-container>.card {
+  height: 100%;
+  margin: 0px auto;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.project-card-link {
+  margin: 1%;
+}
+
+.ui.two.buttons,
+.ui.one.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Dark Mode Overrides for Semantic UI Card */
+body.dark-mode .ui.card {
+  background-color: var(--bg-card) !important;
+  box-shadow: var(--shadow-sm) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+body.dark-mode .ui.card>.content>.header {
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .ui.card>.content>.meta {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-mode .ui.card>.content>.description {
+  color: var(--text-primary) !important;
+}
+
+.ui.one.buttons {
+  justify-content: center;
+}

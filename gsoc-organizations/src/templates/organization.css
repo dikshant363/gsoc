@@ -1,0 +1,18 @@
+.organization-heading-container {
+  padding-top: 2%;
+  font-family: "Galano Grotesque Alt Medium";
+  font-size: 24px;
+  color: #16697a;
+  text-align: center;
+  justify-content: center;
+}
+
+.organization-content-grid {
+  padding-top: 3% !important;
+}
+
+.organization-graph-ad-container {
+  margin: 3%;
+  border: 2px solid rgb(230, 236, 241);
+  box-shadow: 9px 9px 10px #d1d9e6, -6px -6px 10px rgb(230, 236, 241);
+}

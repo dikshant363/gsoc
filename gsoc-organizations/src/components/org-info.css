@@ -1,0 +1,96 @@
+.org-info-container {
+  margin: 3%;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  box-shadow: var(--shadow-md);
+}
+
+.org-info-logo-container {
+  height: 128px;
+  padding: 12px 12px;
+  background-color: var(--card-header-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.org-info-logo {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.org-info-site-container {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.org-info-description-container {
+  text-align: center;
+  justify-content: center;
+  padding: 2% 3%;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.org-info-divider {
+  width: 80%;
+}
+
+.org-info-category-container {
+  text-align: center;
+}
+
+.org-info-category-container span {
+  display: inline-block;
+  width: inherit;
+  padding: 1%;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: "Galano Grotesque Alt Medium";
+}
+
+.org-info-years-container {
+  text-align: center;
+}
+
+.org-info-year {
+  display: inline-block;
+  margin-left: 1%;
+  padding: 1%;
+  background-color: var(--code-text);
+  color: white;
+  border-radius: 2px;
+  font-family: "Galano Grotesque Alt Medium";
+}
+
+.org-info-technologies-container {
+  text-align: center;
+}
+
+.org-info-technology {
+  display: inline-block;
+  margin: 1%;
+  padding: 1%;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  border-radius: 2px;
+  font-family: "Galano Grotesque Alt Medium";
+}
+
+.org-info-topics-container {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.org-info-topic {
+  display: inline-block;
+  margin: 1%;
+  padding: 1%;
+  border: 1px solid var(--code-text);
+  color: var(--code-text);
+  border-radius: 2px;
+  font-family: "Galano Grotesque Alt Medium";
+}

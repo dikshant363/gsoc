@@ -1,0 +1,113 @@
+.sidebar-sidebar {
+  z-index: 20;
+  height: 100%;
+  position: fixed;
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  overflow: hidden;
+  background-color: var(--bg-sidebar);
+  border-right: 1px solid var(--border-color);
+  box-shadow: 4px 0 24px var(--shadow-sm);
+}
+
+.sidebar-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  padding: 0 16px;
+}
+
+.sidebar-content-clear-filters {
+  text-align: center;
+  justify-content: center;
+  padding: 16px 0;
+  margin-bottom: auto;
+}
+
+.sidebar-content-filters {
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+/* Custom Scrollbar for sidebar */
+.sidebar-content-filters::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-content-filters::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-content-filters::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.sidebar-logo-description {
+  justify-content: center;
+  text-align: center;
+  padding: 24px 20px;
+  background: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-description {
+  font-family: "Galano Grotesque Alt Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-color);
+  letter-spacing: -0.5px;
+}
+
+.sidebar-footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 20px 0;
+  background-color: var(--card-header-bg);
+  border-top: 1px solid var(--border-color);
+}
+
+.sidebar-divider {
+  width: 100%;
+  color: var(--border-color);
+  margin: 16px 0;
+}
+
+.sidebar-footer-icon {
+  color: var(--accent-color);
+}
+
+.sidebar-footer-icon-link {
+  margin: 0px !important;
+  color: var(--text-secondary) !important;
+  transition: color 0.2s;
+}
+
+.sidebar-footer-icon-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.sidebar-footer-text-container {
+  margin-top: 12px;
+}
+
+.sidebar-footer-text {
+  font-family: "Galano Grotesque Alt Medium", sans-serif;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.sidebar-footer-text u {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-primary);
+}

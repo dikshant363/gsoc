@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GSoC Idea Schema",
+  "description": "Unified schema for Google Summer of Code ideas and projects",
+  "type": "object",
+  "required": [
+    "id",
+    "org",
+    "year",
+    "status",
+    "title",
+    "description",
+    "tags",
+    "tech_stack",
+    "source_url",
+    "last_updated"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (format: org-year-hash)",
+      "pattern": "^[a-z0-9-]+-\\d{4}-[a-f0-9]+$"
+    },
+    "org": {
+      "type": "string",
+      "description": "Organization name"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2016,
+      "maximum": 2025,
+      "description": "GSoC year"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["proposed", "in-progress", "completed", "abandoned"],
+      "description": "Project status"
+    },
+    "title": {
+      "type": "string",
+      "description": "Project/idea title"
+    },
+    "short_description": {
+      "type": "string",
+      "description": "Brief summary (1-2 sentences)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Full project description"
+    },
+    "student_name": {
+      "type": ["string", "null"],
+      "description": "Student name (null if proposed)"
+    },
+    "proposal_id": {
+      "type": ["string", "null"],
+      "description": "GSoC proposal ID (if in-progress)"
+    },
+    "project_url": {
+      "type": ["string", "null"],
+      "description": "GSoC project page URL"
+    },
+    "code_url": {
+      "type": ["string", "null"],
+      "description": "Source code repository URL"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Enriched tags from analysis"
+    },
+    "tech_stack": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Technology stack from org + repo analysis"
+    },
+    "languages": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Programming languages used"
+    },
+    "topics": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Domain topics"
+    },
+    "mentors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Mentor contact information"
+    },
+    "difficulty": {
+      "type": ["string", "null"],
+      "enum": ["easy", "medium", "hard", "expert"],
+      "description": "Estimated difficulty level"
+    },
+    "outcome": {
+      "type": ["string", "null"],
+      "enum": ["success", "partial", "failed"],
+      "description": "Project outcome (for completed projects)"
+    },
+    "source_url": {
+      "type": "string",
+      "description": "Source URL (ideas_url or projects_url)"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last update timestamp"
+    },
+    "language": {
+      "type": "string",
+      "description": "Content language code (default 'en')",
+      "default": "en"
+    },
+    "related_ideas": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of related ideas"
+    },
+    "title_en": {
+      "type": ["string", "null"],
+      "description": "Translated title (if original not English)"
+    },
+    "description_en": {
+      "type": ["string", "null"],
+      "description": "Translated description (if original not English)"
+    },
+    "original_language": {
+      "type": ["string", "null"],
+      "description": "Original language (if translated)"
+    }
+  }
+}
