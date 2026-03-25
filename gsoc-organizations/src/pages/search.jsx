@@ -7,6 +7,7 @@ import {
   Form,
   Button,
   Icon,
+  Message,
 } from "semantic-ui-react"
 import Layout from "../layouts/layout"
 import Seo from "../components/seo"
